@@ -1,0 +1,27 @@
+#massa de testes para criação de contas
+### para acrescentar mais dados basta apenas seguir o modelo de exemplo
+### após isso necessita apenas ir no arquivo de features de cadastro 
+### e mudar o "code" e "dado" para qual usuario pretende cadastrar
+
+superman:
+  email:        "superman@gmail.com"
+  Nome:         'Clark'
+  Sobrenome:    'Kent'
+  Genero:       'Masculino'
+
+  password:     'kryptonita'
+  Endereço:     'Avenue Metropolis'
+  Cidade:       'Metropolis'
+  Estado:       'Kansas'
+  PostalCode:   '00000'
+  MobilePhone:  '0000'
+  Alias:        'SupermanHome'
+
+batman:
+  email: "batman@gmail.com"
+
+wonderWoman:
+  email: "maravilha@gmail.com"
+
+spider:
+  email: "spiderman@gmail.com"

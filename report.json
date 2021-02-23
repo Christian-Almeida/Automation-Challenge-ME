@@ -1,0 +1,126 @@
+[
+  {
+    "uri": "features/cadastro.feature",
+    "id": "criação-de-conta",
+    "keyword": "Funcionalidade",
+    "name": "Criação de Conta",
+    "description": "    Como um Usuário comum visitando a página\n    e deseja-se criar uma conta no site\n    assim podendo-se fazer compras",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@test2",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "criação-de-conta;email-válido;;2",
+        "keyword": "Esquema do Cenario",
+        "name": "Email Válido",
+        "description": "",
+        "line": 17,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@test2",
+            "line": 2
+          },
+          {
+            "name": "@email_val",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26700
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17400
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8800
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuário esteja na página de login e deseja criar uma conta",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/cadastro_step.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4681610100
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "se insere um email valido no formulario 'superman'",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/cadastro_step.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3144000100
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ver \"CREATE AN ACCOUNT\" na aréa de criação de conta",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/cadastro_step.rb:18"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to 127.0.0.1:9515 (No connection could be made because the target machine actively refused it. - connect(2) for \"127.0.0.1\" port 9515) (Errno::ECONNREFUSED)\n./features/step_definitions/cadastro_step.rb:19:in `\"devo ver {string} na aréa de criação de conta\"'\nfeatures/cadastro.feature:17:in `Então devo ver \"CREATE AN ACCOUNT\" na aréa de criação de conta'\nfeatures/cadastro.feature:13:in `Então devo ver \"CREATE AN ACCOUNT\" na aréa de criação de conta'",
+              "duration": 8065278900
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to 127.0.0.1:9515 (No connection could be made because the target machine actively refused it. - connect(2) for \"127.0.0.1\" port 9515) (Errno::ECONNREFUSED)\n./features/support/hooks.rb:26:in `add_screenshot'\n./features/support/hooks.rb:15:in `After'",
+              "duration": 2110819800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to 127.0.0.1:9515 (No connection could be made because the target machine actively refused it. - connect(2) for \"127.0.0.1\" port 9515) (Errno::ECONNREFUSED)",
+              "duration": 2000871600
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
