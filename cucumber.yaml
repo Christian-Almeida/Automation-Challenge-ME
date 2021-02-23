@@ -1,6 +1,15 @@
+# ---
+# default: -p html -p bdd -p json
+# html: --format html --out=features.html
+# dot: --format progress
+# bdd: --format pretty
+# json: --format json -o "report.json" 
 ---
-default: -p html -p bdd -p json
-html: --format html --out=features.html
-dot: --format progress
-bdd: --format pretty
-json: --format json -o "report.json"
+default: -p chrome -p json -p pretty
+ci: -p headless -p json -p pretty
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+json: --format json --out=logs/report.json
+pretty: --format pretty
+progress: --format progress
