@@ -10,11 +10,10 @@ Funcionalidade: Criação de Conta
 
     Dado que o usuário esteja na página de login e deseja criar uma conta
     Quando se insere um email valido no formulario <code>
-    Então devo ver "CREATE AN ACCOUNT" na aréa de criação de conta
+    Então devo ver "Create an account" na aréa de criação de conta
 
     Exemplos:
         | code              |
-        | 'superman'        |
         | 'batman'          |
         | 'wonderWoman'     |
         | 'spider'          |
@@ -29,5 +28,7 @@ Funcionalidade: Criação de Conta
     Entao devo ver "MY ACCOUNT" na página
 
     Exemplos:
-        | dados          | code         |
-        |'superman'      |  'superman'  |
+        | dados             | code              |
+        |'batman'           |  'batman'         |
+        |'wonderWoman'      |  'wonderWoman'    |
+    
