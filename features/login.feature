@@ -10,7 +10,7 @@ Funcionalidade: Login na conta
     Cenario: Login com Sucesso
     Dado que estou na página de login
     Quando o usuário faz login com "testerQaruby@gmail.com" e 'capitao123'
-    Então devo ver "My account" na área logada
+    Então devo ver "MY ACCOUNT" na área logada
 
     # Exemplos:
     #       | email     | senha       |
